@@ -1,0 +1,144 @@
+/* label {
+  margin: 10px;
+} */
+
+input[type="radio"] {
+  display: inline-block;
+  margin: 0rem 0.3rem 1rem 1.4rem;
+}
+
+.ans {
+  box-sizing: content-box;
+  padding: 0.5rem;
+}
+/* ------------------------------------------------------------------------ */
+
+input {
+  margin-right: 4rem;
+  margin-bottom: 1rem;
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  padding-left: 5rem;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 1rem 0;
+  outline: none;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  color: rgb(238, 226, 226);
+  line-height: 18px;
+  /* font-weight: bold; */
+}
+
+li {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url(/Cure-It/image/terms.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* ------------navbar--------------------- */
+
+.navbar-brand {
+  font-family: "Dancing Script", cursive;
+  margin: 0 0 0 30rem;
+  padding: 0;
+  font-size: 5rem;
+}
+
+.nav-item {
+  margin: 0rem 1rem 2rem;
+  padding: 0%;
+}
+
+/* ------------------body ------------------*/
+
+.glass-container {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 25px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(120, 124, 125, 0.085);
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  border: 2px rgba(255, 255, 255, 0.4) solid;
+  border-bottom: 2px rgba(40, 40, 40, 0.35) solid;
+  border-right: 2px rgba(40, 40, 40, 0.35) solid;
+}
+/* ---------------block element ----------------*/
+.main-block {
+  padding: 0.5rem 2rem 2rem 2rem;
+  margin: 0%;
+}
+
+.main-block-2 {
+  width: auto;
+  margin: 0 auto;
+  /* background-color: #0f1010; */
+  padding: 0.5rem;
+  font-family: "Roboto Slab", serif;
+  color: white;
+  font-weight: normal;
+}
+
+/* ------------headings--------------- */
+.heading-1 {
+  color: #fffefe;
+  font-size: 1.8rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.heading-2 {
+  font-size: 3rem;
+  color: #00adb5;
+}
+
+/* ----------get started buttton------------ */
+
+.btn {
+  -webkit-border-radius: 19;
+  -moz-border-radius: 19;
+  border-radius: 19px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  background: #00adb5;
+  padding: 8px 35px 9px 36px;
+  text-decoration: none;
+  margin: 1.5rem 0 1rem 13rem;
+}
+
+.btn:hover {
+  background: #00adb5;
+  text-decoration: none;
+}
+
+/* footer section */
+#footer {
+  margin-left: 30rem;
+  color: white;
+}
+
+/* -----------------main form----------------- */
+
+.main-block-2,
+::after,
+::before {
+  box-sizing: content-box;
+}
+
+.para {
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  align-items: center;
+}

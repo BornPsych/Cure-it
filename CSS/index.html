@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        background-color: #000000;
+      }
+
+      button {
+        height: 80px;
+        width: 80px;
+        background-color: white;
+        border: 0px transparent;
+        border-radius: 50%;
+        margin: 4px;
+        padding: 4px;
+      }
+
+      .fa {
+        font-size: 48px;
+        color: black;
+      }
+
+      .reset {
+        padding: 8px;
+      }
+
+      .reset:hover {
+        opacity: 0.8;
+      }
+      .welcome {
+        text-align: center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .welcome .welheading span {
+        text-transform: upercase;
+        display: block;
+      }
+      .text1 {
+        font-size: 60px;
+        color: orange;
+        font-weight: 700;
+        letter-spacing: 8px;
+        margin-bottom: 20px;
+        background: transparent;
+        position: relative;
+        animation: text 3s 1;
+      }
+      .text2 {
+        font-size: 30px;
+        color: yellow;
+      }
+      @keyframes text {
+        0% {
+          color: black;
+          margin-bottom: -40px;
+        }
+        30% {
+          letter-spacing: 25px;
+          margin-bottom: -40px;
+        }
+        85% {
+          letter-spacing: 8px;
+          margin-bottom: -40px;
+        }
+        95% {
+          letter-spacing: 8px;
+          margin-bottom: -20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Heading -->
+    <div class="container-fluid text-center" id="heading">
+      <h1 style="color: white">TOY GAME</h1>
+    </div>
+    <br />
+    <br />
+    <div class="container-fluid text-center" id="players">
+      <!-- Inform area for player's turn -->
+      <h4 id="screen" style="color: white">PLAYER 1 TURN FOLLOWS</h4>
+    </div>
+    <br />
+    <div class="container-fluid" id="game">
+      <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+          <!-- Playing Canvas -->
+          <center>
+            <table>
+              <tr>
+                <td colspan="3"></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <button class="sq1 r"></button>
+                </td>
+                <td>
+                  <button class="sq2 r"></button>
+                </td>
+                <td>
+                  <button class="sq3 r"></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button class="sq4 r"></button>
+                </td>
+                <td>
+                  <button class="sq5 r"></button>
+                </td>
+                <td>
+                  <button class="sq6 r"></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button class="sq7 r"></button>
+                </td>
+                <td>
+                  <button class="sq8 r"></button>
+                </td>
+                <td>
+                  <button class="sq9 r"></button>
+                </td>
+              </tr>
+            </table>
+            <br />
+            <br />
+
+            <!-- Reset button for Game -->
+            <input
+              type="button"
+              id="reset"
+              class="reset btn btn-lg btn-danger btn-block"
+              value="RESET"
+            />
+          </center>
+        </div>
+        <div class="col-lg-4"></div>
+      </div>
+    </div>
+    <div class="welcome">
+      <div class="welheading">
+        <span class="text1">welcome to</span>
+        <span class="text2">game zone</span>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 style="color: #fff">Instruction To Play Game</h2>
+          <p style="color: #fff">Implementation of Tic-Tac-Toe game</p>
+          <p style="color: #fff">Rules of the Game</p>
+
+          <p style="color: #fff">
+            The game is to be played between two people (in this program between
+            HUMAN ). One of the player chooses ‘&#10003;’ and the other ‘X’ to
+            mark their respective cells. The game starts with one of the players
+            and the game ends when one of the players has one whole row/ column/
+            diagonal filled with his/her respective character (‘&#10003;’ or
+            ‘X’). If no one wins, then the game is said to be draw.
+          </p>
+
+          <p style="color: #fff">
+            Implementation In our program the moves taken by the players are
+            chosen randomly. What more can be done in the program? The program
+            is in not played optimally by both sides because the moves are
+            chosen randomly. The program can be easily modified so that both
+            players play optimally (which will fall under the category of
+            Artificial Intelligence). Also the program can be modified such that
+            the user himself gives the input (using scanf() or cin). The above
+            changes are left as an exercise to the readers.
+          </p>
+
+          <p style="color: #fff">
+            Winning Strategy – An Interesting Fact If both the players play
+            optimally then it is destined that you will never lose (“although
+            the match can still be drawn”). It doesn’t matter whether you play
+            first or second.In another ways – “ Two expert players will always
+            draw ”.
+          </p>
+        </div>
+      </div>
+      <button
+        style="float: right; width: 100px; height: 30px"
+        class="btn btn-primary"
+        id="play"
+        type="button"
+      >
+        Let's Play!
+      </button>
+    </div>
+  </body>
+  <!-- Consecutive player Turns -->
+  <script>
+    $(document).ready(function () {
+      $("#heading").hide();
+      $("#players").hide();
+      $("#game").hide();
+      $("#play").on("click", function () {
+        $("#heading").show();
+        $("#players").show();
+        $("#game").show();
+        $(".welcome").hide();
+      });
+    });
+    // Flag variable for checking Turn
+    // We'll be modifying our base logic in the
+    // next steps as per requirements
+    var turn = 1;
+
+    $("button").click(function () {
+      if (turn == 1) {
+        $("#screen").text("PLAYER 2 TURN FOLLOWS");
+
+        // Check sign font from font-awesome
+        $(this).addClass("fa fa-check");
+        turn = 2;
+      } else {
+        $("#screen").text("PLAYER 1 TURN FOLLOWS");
+
+        // Cross sign font from font-awesome
+        $(this).addClass("fa fa-times");
+        turn = 1;
+      }
+    });
+    $("#reset").on("click", function () {
+      $("button").removeClass();
+    });
+  </script>
+</html>

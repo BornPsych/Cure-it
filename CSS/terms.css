@@ -1,0 +1,105 @@
+img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  padding-left: 5rem;
+}
+p {
+  font-family: "Poppins", sans-serif;
+}
+li {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url(/Cure-It/image/terms.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* ------------navbar--------------------- */
+
+.navbar-brand {
+  font-family: "Dancing Script", cursive;
+  margin: 0 0 0 30rem;
+  padding: 0;
+  font-size: 5rem;
+}
+
+.nav-item {
+  margin: 0rem 1rem 2rem;
+  padding: 0%;
+}
+
+/* ------------------body ------------------*/
+
+.glass-container {
+  width: 700px;
+  height: 375px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 25px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(120, 124, 125, 0.085);
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  border: 2px rgba(255, 255, 255, 0.4) solid;
+  border-bottom: 2px rgba(40, 40, 40, 0.35) solid;
+  border-right: 2px rgba(40, 40, 40, 0.35) solid;
+}
+/* ---------------block element ----------------*/
+.main-block {
+  padding: 0.5rem 2rem 2rem 2rem;
+  margin: 0%;
+}
+
+.main-block-2 {
+  width: 50%;
+  margin: 0 auto;
+  /* background-color: #0f1010; */
+  padding: 3rem;
+  font-family: "Roboto Slab", serif;
+  color: white;
+  font-weight: normal;
+}
+
+/* ------------headings--------------- */
+.heading-1 {
+  color: #fffefe;
+  font-size: 1.8rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.heading-2 {
+  font-size: 3rem;
+  color: #00adb5;
+}
+
+/* ----------get started buttton------------ */
+
+.btn {
+  -webkit-border-radius: 19;
+  -moz-border-radius: 19;
+  border-radius: 19px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 35px 9px 36px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.button-terms {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* footer section */
+#footer {
+  margin-left: 30rem;
+  color: white;
+}
